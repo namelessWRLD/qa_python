@@ -97,3 +97,4 @@ class TestBooksCollector:
         collector = BooksCollector()
         collector.add_new_book(book_name)
         assert book_name in collector.get_books_genre()
+        

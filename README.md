@@ -17,5 +17,4 @@
 
 ## Запуск тестов
 
-```bash
 pytest tests.py
