@@ -18,4 +18,4 @@
 ## Запуск тестов
 
 ```bash
-pytest test.py
+pytest tests.py
