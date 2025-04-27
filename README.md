@@ -17,4 +17,5 @@
 
 ## Запуск тестов
 
+git 
 pytest tests.py
