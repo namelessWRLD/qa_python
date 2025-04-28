@@ -98,3 +98,16 @@ class TestBooksCollector:
         collector.add_new_book(book_name)
         assert book_name in collector.get_books_genre()
         
+    # тестируем получение словаря books_genre
+    def test_get_books_genre_returns_correct_dictionary(self):
+        collector = BooksCollector()
+        collector.add_new_book('Гарри Поттер')
+        collector.set_book_genre('Гарри Поттер', 'Фантастика')
+        assert collector.get_books_genre() == {'Гарри Поттер': 'Фантастика'}
+
+    # тестируем получение жанра конкретной книги
+    def test_get_book_genre_returns_correct_genre(self):
+        collector = BooksCollector()
+        collector.add_new_book('Шрек')
+        collector.set_book_genre('Шрек', 'Мультфильмы')
+        assert collector.get_book_genre('Шрек') == 'Мультфильмы'
