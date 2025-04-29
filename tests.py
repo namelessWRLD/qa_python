@@ -112,4 +112,5 @@ class TestBooksCollector:
         collector.set_book_genre('Шрек', 'Мультфильмы')
         assert collector.get_book_genre('Шрек') == 'Мультфильмы'
 
+
         
